@@ -1,0 +1,12 @@
+.em-desenvolvimento {
+  max-width: 560px;
+}
+
+.em-desenvolvimento h1 {
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-3);
+}
+
+.em-desenvolvimento p {
+  color: var(--color-text-muted);
+}

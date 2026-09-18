@@ -1,0 +1,13 @@
+.sobre {
+  max-width: 680px;
+}
+
+.sobre h1 {
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-4);
+}
+
+.sobre p {
+  margin-bottom: var(--spacing-3);
+  color: var(--color-text-muted);
+}

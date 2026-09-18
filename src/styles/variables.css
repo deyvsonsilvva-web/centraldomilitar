@@ -1,0 +1,22 @@
+:root {
+  --color-bg: #f7f8fa;
+  --color-surface: #ffffff;
+  --color-text: #1a1d23;
+  --color-text-muted: #55606c;
+  --color-primary: #1b2a4a;
+  --color-primary-light: #2e4470;
+  --color-accent: #3563e9;
+  --color-border: #dde1e6;
+
+  --font-sans: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 1rem;
+  --spacing-4: 1.5rem;
+  --spacing-5: 2rem;
+  --spacing-6: 3rem;
+
+  --radius: 8px;
+  --max-width: 1120px;
+}
