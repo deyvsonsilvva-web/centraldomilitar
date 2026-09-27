@@ -1,0 +1,49 @@
+.intersticio-info {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--spacing-3);
+  background-color: var(--color-surface);
+}
+
+.intersticio-info__cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-2);
+  margin-bottom: var(--spacing-2);
+}
+
+.intersticio-info__tipo {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-text-muted);
+}
+
+.intersticio-info__valor {
+  margin: 0 0 var(--spacing-2);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.intersticio-info__descricao {
+  margin: 0 0 var(--spacing-2);
+  font-size: 0.9375rem;
+  color: var(--color-text);
+}
+
+.intersticio-info__aplicabilidade {
+  margin: 0 0 var(--spacing-2);
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.intersticio-info__aviso {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  border-top: 1px dashed var(--color-border);
+  padding-top: var(--spacing-2);
+}

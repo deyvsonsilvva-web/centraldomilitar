@@ -1,0 +1,54 @@
+.career-card {
+  display: block;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--spacing-4);
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.career-card--link {
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.career-card--link:hover,
+.career-card--link:focus-visible {
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.career-card__cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-2);
+  margin-bottom: var(--spacing-2);
+}
+
+.career-card__categoria {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-text-muted);
+}
+
+.career-card__nome {
+  margin: 0 0 var(--spacing-2);
+  font-size: 1.125rem;
+  color: var(--color-primary);
+}
+
+.career-card__descricao {
+  margin: 0 0 var(--spacing-3);
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+}
+
+.career-card__contagem {
+  margin: 0;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-accent);
+}

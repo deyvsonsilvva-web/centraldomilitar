@@ -8,6 +8,11 @@
   --color-accent: #3563e9;
   --color-border: #dde1e6;
 
+  --color-status-verificado: #1f7a4d;
+  --color-status-parcial: #9a6b00;
+  --color-status-pendente: #b3541e;
+  --color-status-desatualizado: #b3261e;
+
   --font-sans: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 
   --spacing-1: 0.25rem;

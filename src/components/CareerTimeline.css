@@ -1,0 +1,42 @@
+.career-timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: var(--spacing-3);
+}
+
+.career-timeline__item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  flex: 1 1 220px;
+  min-width: 200px;
+}
+
+.career-timeline__item > .rank-card {
+  flex: 1 1 auto;
+}
+
+.career-timeline__conector {
+  display: none;
+  flex-shrink: 0;
+  width: var(--spacing-4);
+  height: 2px;
+  background-color: var(--color-border);
+}
+
+@media (min-width: 768px) {
+  .career-timeline__conector {
+    display: block;
+  }
+}
+
+.career-timeline__vazio {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  font-style: italic;
+  margin: 0;
+}

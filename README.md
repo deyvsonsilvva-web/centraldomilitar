@@ -50,12 +50,40 @@ em Settings → Pages do repositório, definir "Source" como **GitHub Actions**
 
 ```text
 src/
-├── components/   # componentes reutilizáveis (Header, Footer, ForceCard...)
-├── data/         # dados estruturados (JSON) — ainda vazio nesta etapa
+├── components/   # componentes reutilizáveis (Header, Footer, ForceCard,
+│                 # CareerCard, RankCard, CareerTimeline, IntersticioInfo,
+│                 # RequirementList, SourceReference, ValidationStatus...)
+├── data/         # dados estruturados por Força — ainda vazios de conteúdo
+│                 # militar real, aguardando pesquisa documental
+│   ├── forcas/       # metadados das três Forças Armadas
+│   ├── exercito/      # postos e carreiras do Exército
+│   ├── marinha/       # postos e carreiras da Marinha
+│   ├── aeronautica/   # postos e carreiras da Força Aérea
+│   └── mock/          # dados fictícios de exemplo, só para desenvolvimento
+│                       # de componentes — nunca importados por páginas reais
 ├── layouts/       # layout geral da aplicação (MainLayout)
 ├── pages/        # páginas roteadas (Home, Sobre, EmDesenvolvimento)
 ├── routes/       # definição das rotas (AppRoutes)
 ├── styles/       # CSS global e variáveis de design
-├── types/        # tipos TypeScript compartilhados
+├── types/        # tipos TypeScript compartilhados (military.ts, sources.ts)
 └── utils/        # funções utilitárias puras — ainda vazio nesta etapa
 ```
+
+## Modelo de dados de carreira
+
+`src/types/military.ts` e `src/types/sources.ts` definem a arquitetura para
+representar carreiras militares (`Forca`, `Carreira`, `PostoOuGraduacao`,
+`Intersticio`, `Requisito`, `Curso`, `Fonte`, `StatusValidacao`). O modelo
+distingue explicitamente tempo mínimo/interstício, requisito, critério de
+promoção, existência de vaga, antiguidade e mérito — nenhuma regra de
+progressão deve ser reduzida a "X anos = promoção automática".
+
+Todo dado factual carrega suas próprias `fontes` (`Fonte[]`) e um
+`statusValidacao` (`verificado` | `parcialmenteVerificado` |
+`pendenteVerificacao` | `desatualizado`), para que a interface nunca
+apresente informação não confirmada como fato consolidado.
+
+Os arquivos em `src/data/exercito/`, `src/data/marinha/` e
+`src/data/aeronautica/` ainda estão vazios: o preenchimento com dados reais
+só ocorre após o ciclo de pesquisa documental descrito nas instruções do
+projeto.
